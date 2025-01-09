@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+  <body>
+    <div id="proposalPage" class="page active">
+        <div class="container">
+            <h1>A Special Question Just for You 💕</h1>
+            <div class="main-question">Will you be mine forever?</div>
+            <div>
+                <button class="btn yes-btn" id="yesButton" onclick="showPage('celebrationPage')">YES</button>
+                <button class="btn no-btn" id="noButton" onclick="showPage('sorrowPage')">NO</button>
+            <div class="footer">
+                No matter your choice, you'll always mean the world to me.
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebration Page -->
+    <div id="celebrationPage" class="page">
+        <div class="container">
+            <h1>You Said YES! 🎉</h1>
+            <p style="font-size: 1.5rem; margin: 2rem 0;">
+                You've made me the happiest person alive! Let's begin this beautiful journey together.
+            </p>
+            <div class="footer">
+                Forever grateful for this moment. ❤️
+            </div>
+        </div>
+    </div>
+
+    <!-- Sorrow Page -->
+    <div id="sorrowPage" class="page">
+        <div class="container">
+            <h1>Thank You for Your Honesty 💙</h1>
+            <p style="font-size: 1.2rem; margin: 1.5rem 0;">
+                I understand and respect your feelings. Thank you for being open with me.
+            </p>
+            <p style="font-size: 1.2rem; margin: 1.5rem 0; color: #666;">
+                No matter what, I wish you happiness and joy in all that you do.
+            </p>
+            <button class="btn" onclick="showPage('proposalPage')">Return Home</button>
+            <div class="footer">
+                This isn't goodbye, it's a new chapter. Thank you for sharing this moment with me.
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body> 
+</html>
